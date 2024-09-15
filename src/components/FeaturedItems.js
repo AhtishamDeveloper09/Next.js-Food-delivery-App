@@ -18,11 +18,11 @@ function FeaturedItems() {
               <Image src={item.img} alt="" fill className="object-contain" />
             </div>
             {/* Text */}
-            <div className="flex h-1/2 flex-col items-center md:gap-2 text-center justify-center">
+            <div className="flex h-1/2 flex-col items-center lg:gap-2 text-center justify-center">
               <h2 className="text-xl font-bold uppercase xl:text-2xl 2xl:text-3xl">
                 {item.title}
               </h2>
-              <p className="px-3 py-1 lg:py-2 2xl:p-6">{item.desc}</p>
+              <p className="px-3 py-2 lg:py-4 2xl:p-6">{item.desc}</p>
               <span className="font-bold text-xl lg:py-2">${item.price}</span>
               <button className="bg-red-500 text-white p-2 font-semibold rounded-md">
                 Add to Cart

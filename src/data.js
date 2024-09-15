@@ -341,7 +341,7 @@ export const singleProduct = {
   ],
 };
 
-export const menu = [
+export const menu  = [
   {
     id: 1,
     slug: "pastas",

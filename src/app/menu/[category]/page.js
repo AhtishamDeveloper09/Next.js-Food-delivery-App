@@ -10,7 +10,7 @@ function CategoryPage() {
         <Link
           key={item.id}
           href={`/product/${item.id}`}
-          className="w-full h-[60vh] flex flex-col justify-between border-b-2 border-r-2 border-red-500 sm:w-1/2 lg:w-1/3 p-4 group"
+          className="w-full h-[60vh] flex flex-col justify-between border-b-2 border-r-2 border-red-500 even:bg-fuchsia-50 sm:w-1/2 lg:w-1/3 p-4 group"
         >
           {/* Image */}
           <div className="relative h-[80%]">

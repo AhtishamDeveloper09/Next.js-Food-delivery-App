@@ -11,26 +11,20 @@ function MenuPage() {
           href={`/menu/${category.slug}`}
           key={category.id}
           style={{ backgroundImage: `url(${category.img})` }}
-          className="w-full bg-cover p-2 lg:h-1/2"
+          className="w-full bg-cover px-2 py-4 lg:h-[60%]"
         >
           {/* Text */}
           <div className={`text-${category.color} w-1/2`}>
             <h1 className="text-2xl font-bold uppercase">{category.title}</h1>
             <p className="text-sm my-2 md:my-4 md:text-md">{category.desc}</p>
             <button
-              className={`hidden lg:block bg-${
-                category.id === 2 ? "black" : "white"
-              } text-${
-                category.color === "black" ? "white" : "red-500"
-              } p-2 font-medium rounded-md`}
+              className={`hidden lg:block p-2 font-medium rounded-md ${
+                category.color === "black" ? "text-white" : "text-red-500"
+              } ${category.color === "black" ? "bg-black" : "bg-white"}`}
             >
-              Explore More
+              Explore
             </button>
           </div>
-          {/* Image */}
-          {/* <div>
-            <Image />
-          </div> */}
         </Link>
       ))}
     </div>
